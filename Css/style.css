@@ -154,8 +154,8 @@ ul{
         flex-direction: column;
         width: calc(100% );
         position: absolute;
-        top: calc(100% - 30px);
-        left: -40px;
+        top: calc(100% - 16px);
+        left: 0;
         background-color: #2a2b2c ;
     }
     .header .toggle-menu:hover + ul li a{
