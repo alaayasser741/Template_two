@@ -1034,3 +1034,96 @@ text-transform: uppercase;
     }
 }
 /* End Subscribe */
+/* Start Contact */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .contact .content{
+        flex-direction: column;
+    }
+}
+.contact .content form{
+    flex-basis: 60%;
+    position: relative;
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 93%;
+}
+
+.contact .content form .main-input:focus{
+    outline: none;
+}
+.contact .content form textarea.main-input{
+    height: 200px;
+}
+.contact .content form input[type="submit"]{
+    padding: 20px;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.contact .content form input[type="submit"]:hover{
+    font-size: 17px;
+}
+.contact .content .info{
+    flex-basis:30%;
+}
+.contact .content .info h4{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.contact .content .info .phone{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+
+}
+.contact .content .info h4:nth-of-type(2){
+    margin-top: 90px;
+}
+.contact .content .info address{
+    color: #777;
+    line-height: 2;
+}
+@media (max-width:767px) {
+    .contact .content form .main-input{
+        width: 85%;
+    }
+    .contact .content form input[type="submit"]{
+        position: absolute;
+        right: 5%;
+    }
+    .contact .content .info{
+        
+        order: -1;
+        text-align: center;
+    }
+    .contact .content .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+    .contact .content .info address{
+        margin-bottom: 30px;
+    }
+}
+/* End Contact */
